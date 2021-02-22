@@ -11,4 +11,5 @@ int box_same_color(char* color)
 		temp = temp->next;
 	}
     return count;
+
 }
