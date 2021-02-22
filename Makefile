@@ -1,6 +1,6 @@
-PROJECT_NAME = factorial
-SRC = test_factorial.c\
-factorial.c\
+PROJECT_NAME = box
+SRC = delete.c\
+diff_btw_min_max.c\
 unity/unity.c
 
 INC =./unity
