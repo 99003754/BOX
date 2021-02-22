@@ -7,7 +7,7 @@
     struct Box * Box = (struct Box *) malloc(sizeof(struct Box));
 	Box->box_id = box_id;
 	strcpy(Box->color, color);
-	//strcpy(Box->phone, phone);
+
 	Box->length = length;
 	Box->breadth = breadth;
 	Box->height = height;
