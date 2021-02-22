@@ -18,7 +18,6 @@ struct Box
 {
     int box_id;
     char color[100];
-   // char phone[100];
     float length;
     float breadth;
     float height;
