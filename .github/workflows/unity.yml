@@ -1,0 +1,22 @@
+name: Unit_Testing
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: install make
+      run: sudo apt-get install make
+    - name: make
+      run: make
+    - name: run
+      run: make test
