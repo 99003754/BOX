@@ -24,6 +24,11 @@
 		// insert Box in beginning of head
 		Box->next = head;
 		head = Box;
+
+		/*
+		head->next = Box;
+		Box->next = NULL;
+		*/
 	}
 
 }
