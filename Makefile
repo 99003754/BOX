@@ -1,29 +1,7 @@
-PROJECT_NAME = box
-SRC = delete.c\
-diff_btw_min_max.c\
-unity/unity.c
-
-INC =./unity
-
-$(PROJECT_NAME).out: $(SRC)
-	gcc $^ -I $(INC) -o $@
-
-test: $(PROJECT_NAME).out
-	./$(PROJECT_NAME).out
-
-analysis:
-	cppcheck $(SRC)
-
-memcheck: $(PROJECT_NAME).out
-	valgrind ./$(PROJECT_NAME).out
-
-coverage:${PROJECT_NAME}.out
-	gcc -fprofile-arcs -ftest-coverage $(SRC) -I $(INC) -o $(PROJECT_NAME).out
-	./${PROJECT_NAME}.out
-	gcov -a $(SRC)
-
-codesize:${PROJECT_NAME}.out
-	size ./${PROJECT_NAME}.out
-
-clean:
-		rm -rf *.out *.o documentation/html *.gcov *.gcda *.gcno
+build:
+	gcc Client_string_4.c -o one
+	gcc Server_string.c_4 -o two
+	gcc stack.c_1 -o stack
+	gcc Stack_mutex.c_3 -o mutex
+	gcc sender2_5.c -o send2
+	gcc rec2_5.c -o rec2
